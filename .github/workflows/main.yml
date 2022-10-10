@@ -11,7 +11,8 @@ jobs:
       - name: Build
         id: build_step
         run: |
-          echo "::set-output name=build_id::builid_completed"
+          echo Hello, world!
+          echo "::set-output name=build_id::$BUILD_ID"
   deploy:
     needs: build
     runs-on: ubuntu-latest
